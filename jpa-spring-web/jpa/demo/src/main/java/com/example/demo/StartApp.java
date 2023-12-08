@@ -17,9 +17,13 @@ public class StartApp implements CommandLineRunner {
     public void run(String... args) throws Exception {
         List<UserApp> users = repository.filtrarPorNome("Israel");
 
+        UserApp username = repository.findByUsername("khaldewey");
+
         for (UserApp u : users) {
             System.out.println(u);
         }
+
+        System.out.println(username.getUsername());
         // UserApp user = new UserApp();
         // user.setName("Israel Alves");
         // user.setUsername("khaldewey");

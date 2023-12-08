@@ -5,8 +5,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class WelcomerController {
-    @GetMapping
-    public String welcome(){
+    @GetMapping()
+    public String welcome() {
         return "Welcome to my web Api !";
     }
 }
