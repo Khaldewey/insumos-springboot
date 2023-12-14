@@ -24,11 +24,11 @@ public class StartApp implements CommandLineRunner {
         }
 
         System.out.println(username.getUsername());
-        // UserApp user = new UserApp();
-        // user.setName("Israel Alves");
-        // user.setUsername("khaldewey");
-        // user.setPassword("123");
-        // repository.save(user);
+        UserApp user = new UserApp();
+        user.setName("Renata Alves");
+        user.setUsername("khal");
+        user.setPassword("1234");
+        repository.save(user);
 
         // for(UserApp u : repository.findAll()){
         // System.out.println(u);
